@@ -53,16 +53,18 @@
         <h3>POST /user</h3>
         <p>Creates a user profile with JSON data</p>
         <p><strong>Required JSON:</strong></p>
-        <code>
-          { "id": "123", "name": "John Doe" }
-        </code>
+        <code> { "id": "123", "name": "John Doe" } </code>
         <p><strong>Usage:</strong></p>
         <code>
-          curl -X POST http://localhost:3000/user \
-          -H "Content-Type: application/json" \
-          -d '{"id":"123","name":"John Doe"}'
+          curl -X POST http://localhost:3000/user \ -H "Content-Type:
+          application/json" \ -d '{"id":"123","name":"John Doe"}'
         </code>
-        <p><em>Note: 'id' and 'name' are required fields. Sending either missing will return a 400 error.</em></p>
+        <p>
+          <em
+            >Note: 'id' and 'name' are required fields. Sending either missing
+            will return a 400 error.</em
+          >
+        </p>
       </div>
 
       <h2>Features Implemented:</h2>
