@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 2 API</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f5f5f5;
+      }
+      .container {
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #333;
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 10px;
+      }
+      .endpoint {
+        background: #f8f9fa;
+        padding: 15px;
+        margin: 15px 0;
+        border-left: 4px solid #007bff;
+        border-radius: 4px;
+      }
+      code {
+        background: #e9ecef;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-family: "Courier New", monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🚀 My Week 2 API</h1>
+      <p>Welcome to the Week 2 Node.js Express API assignment!</p>
+
+      <div class="endpoint">
+        <h3>GET /</h3>
+        <p>Returns: <code>"My Week 2 API!"</code></p>
+        <p><strong>Usage:</strong> <code>curl http://localhost:3000/</code></p>
+      </div>
+
+      <div class="endpoint">
+        <h3>POST /user</h3>
+        <p>Creates a user profile with JSON data</p>
+        <p><strong>Required JSON:</strong></p>
+        <code>
+          { "id": "123", "name": "John Doe", "email": "john@example.com" }
+        </code>
+        <p><strong>Usage:</strong></p>
+        <code>
+          curl -X POST http://localhost:3000/user \ -H "Content-Type:
+          application/json" \ -d '{"id":"123","name":"John
+          Doe","email":"john@example.com"}'
+        </code>
+      </div>
+
+      <h2>Features Implemented:</h2>
+      <ul>
+        <li>✅ Express.js server</li>
+        <li>✅ GET / endpoint</li>
+        <li>✅ POST /user endpoint with validation</li>
+        <li>✅ JSON parsing middleware</li>
+        <li>✅ Error handling (400 for missing data)</li>
+        <li>✅ Environment variable for PORT</li>
+        <li>✅ Static HTML page serving</li>
+        <li>✅ Custom request logging middleware</li>
+        <li>✅ Git version control ready</li>
+      </ul>
+    </div>
+  </body>
+</html>
